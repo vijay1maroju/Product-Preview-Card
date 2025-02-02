@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+
+html {
+    background-color: #f2ebe3;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-card{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.product-image img {
+    width: 274px;
+    height: 390px;
+    margin-top: 45%;
+    margin-left: 28%;
+}
+
+.product-image {
+    grid-column-start: 2;
+}
+
+.information-card {
+    background-color: white;
+    height: 390px;
+    width: 274px;
+    grid-column-start: 3;
+    margin-top: 45%;
+}
+
+.top-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    margin-left: 18px;
+    margin-top: 36px;
+    letter-spacing: 4px;
+}
+
+.information-card h1 {
+    margin-left: 18px;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 27px;
+}
+
+.information-card p {
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right: 58px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: -12px;
+}
+
+.price, .actual-price {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
+.actual-price {
+    text-decoration: line-through;
+}
+
+.information-card button {
+    display: block;
+    margin: 18px 20px 28px 18px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 7px;
+    padding-left: 89px;
+    padding-right: 89px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.main-information {
+    margin-top: 14px;
+    margin-right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        margin-bottom: 20px;
+    }
+
+    .information-card { 
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product-image {
+        margin-bottom: 20px;
+    }
+
+    .information-card {
+        padding-left: 0;
+    }
+}
