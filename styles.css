@@ -70,11 +70,11 @@ html {
 
 .information-card button {
     display: block;
-    margin: 18px 20px 28px 18px;
+    margin: 34px 20px 34px 18px;
     background-color: hsl(158, 36%, 37%);
     border-radius: 7px;
-    padding-left: 89px;
-    padding-right: 89px;
+    max-width: 100%;
+    width: 235px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -90,14 +90,16 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .product-image, .information-card { 
+        margin: 0;
     }
 
     .product-image {
-        margin-bottom: 20px;
-    }
-
-    .information-card { 
-        padding-left: 0;
+        margin-right: 20px;
     }
 }
 
@@ -105,15 +107,16 @@ html {
     .main-card {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .product-image, .information-card { 
+        margin: 0;
     }
 
     .product-image {
-        margin-bottom: 20px;
-    }
-
-    .information-card {
-        padding-left: 0;
+        margin-right: 20px;
     }
 }
